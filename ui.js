@@ -5,32 +5,28 @@ let schedules;
 if (typeof custSched == 'undefined') {
   schedules = [
   `{
-    "title"   : "7 Periods",
+    "title"   : "MWF Bell Schedule 1",
     "blocks"  : [
-      {  "period" : "Period 1" , "start" : "08:25" , "end" : "09:12" ,
-               "alarmsAfterStart" : [] } ,
-      {  "period" : "Period 2" , "start" : "09:18" , "end" : "10:05" } ,
-      {  "period" : "Period 3" , "start" : "10:11" , "end" : "11:04" } ,
-      {  "period" : "Period 4" , "start" : "11:10" , "end" : "12:31" } ,
-      {  "period" : "Period 5" , "start" : "12:37" , "end" : "13:24" } ,
-      {  "period" : "Period 6" , "start" : "13:30" , "end" : "14:17" } ,
-      {  "period" : "Period 7" , "start" : "14:23" , "end" : "15:10" }
-    ] ,
-    "defaultAlarmsAfterStart"  : [ "0:45" ],
-    "defaultAlarmsBeforeEnd"   : [ "2:00" ]
+      {  "period" : "Period 1" , "start" : "09:20" , "end" : "10:20" ,
+               "alarmsBeforeEnd" : [] } ,
+      {  "period" : "Period 2" , "start" : "10:25" , "end" : "11:25" } ,
+      {  "period" : "Period 3" , "start" : "11:30" , "end" : "12:30" } ,
+      {  "period" : "Period 4" , "start" : "13:00" , "end" : "14:00" } ,
+      {  "period" : "Period 5" , "start" : "14:05" , "end" : "15:05" } ,
+      {  "period" : "Period 6" , "start" : "15:10" , "end" : "16:10" } ,
+         ] ,
+        "defaultAlarmsBeforeEnd"   : [ "2:00" ]
   }`,
   `{
-    "title"   : "ABC Day",
+    "title"   : "TR Bell Schedule 2",
     "blocks"  : [
-      {  "period" : "Block 1" , "start" : "08:25" , "end" : "09:33" ,
-             "alarmsAfterStart" : [] } ,
-      {  "period" : "Block 2" , "start" : "09:39" , "end" : "10:53" } ,
-      {  "period" : "Block 3" , "start" : "10:59" , "end" : "12:42" } ,
-      {  "period" : "Block 4" , "start" : "12:48" , "end" : "13:56" } ,
-      {  "period" : "Block 5" , "start" : "14:02" , "end" : "15:10" }
-    ] ,
-    "defaultAlarmsAfterStart"  : [ "0:45" ],
-    "defaultAlarmsBeforeEnd"   : [ "2:00" ]
+      {  "period" : "Period 7" , "start" : "09:20" , "end" : "10:55" ,
+             "alarmsBeforeEnd" : [] } ,
+      {  "period" : "Period 8" , "start" : "11:00" , "end" : "12:35" } ,
+      {  "period" : "Period 9" , "start" : "13:05" , "end" : "14:35" } ,
+      {  "period" : "Period 10" , "start" : "14:40" , "end" : "16:10" } ,
+        ] ,
+        "defaultAlarmsBeforeEnd"   : [ "2:00" ]
   }`
   ];
 } else {
